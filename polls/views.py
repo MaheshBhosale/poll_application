@@ -20,6 +20,10 @@ def results(request, question_id):
 	response="you,re looking at the result of question %s."
 	return HttpResponse(response % question_id)
 
+def marks(request,question_id):
+	response="you have got 70 marks to question %s "
+	return HttpResponse(response % question_id)
+	
 def vote(request, question_id):
 	return HttpResponse("you're voting on question %s." % question_id)
 
